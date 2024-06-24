@@ -55,6 +55,7 @@ export default class SortingVisualizer extends React.Component {
 
     quickSort() {
 
+
     }
 
     heapSort() {
@@ -70,6 +71,7 @@ export default class SortingVisualizer extends React.Component {
     
 
     return (
+        <div className='main'>
         
         <div className='array-container'>
             {array.map((value, idx) => (
@@ -79,6 +81,9 @@ export default class SortingVisualizer extends React.Component {
                 style = {{height: `${value}px`}}></div>
             ))}
             
+        </div>
+        <div className='buttons'>
+
             <button onClick={() => this.resetArray()}>Generate New Array</button>
         <button onClick={() => this.mergeSort()}>Merge Sort</button>
         <button onClick={() => this.quickSort()}>Quick Sort</button>
@@ -86,7 +91,7 @@ export default class SortingVisualizer extends React.Component {
         <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
             
         </div>
-        
+        </div>
         
     );
         

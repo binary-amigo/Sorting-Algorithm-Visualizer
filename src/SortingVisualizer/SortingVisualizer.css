@@ -1,6 +1,7 @@
 .array-container {
     position: absolute;
-    left: 100px;
+    left: auto;
+    top: 100px;
 }
 
 .array-bar {
@@ -8,4 +9,15 @@
     background-color: blue;
     display: inline-block;
     margin: 0 1px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons {
+    position: relative;
+    top: 850px;
 }
